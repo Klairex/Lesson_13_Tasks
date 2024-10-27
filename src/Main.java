@@ -1,5 +1,6 @@
 import Task1.*;
 import Task2.*;
+import Task3.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,14 +34,8 @@ public class Main {
         employees.add(new Manager("Alexandru", 40, "HR"));
         employees.add(new Programmer("Diana", 30, "Python"));
 
-        for (Employee employee : employees) {
-            if (employee instanceof AttendTraining) {
-                ((AttendTraining) employee).attendTraining();
-            }
-            if (employee instanceof ConductInterview) {
-                ((ConductInterview) employee).conductInterview();
-            }
-        }
+        EmployerList employerList = new EmployerList();
+        employerList.ShowInfo(employees);
 
 
     }
