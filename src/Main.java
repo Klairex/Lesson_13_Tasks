@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println("Task1");
         Manager manager = new Manager("Ion",30,"Economie");
         Programmer programmer = new Programmer("Petru",25,"JAVA");
 
@@ -14,8 +14,9 @@ public class Main {
         manager.conductInterview();
 
         programmer.attendTraining();
-        System.out.println();
 
+
+        System.out.println("Task2");
         List<AttendTraining> workers = new ArrayList<>();
         workers.add(manager);
         workers.add(programmer);
@@ -25,7 +26,7 @@ public class Main {
 
 
         //Task 3
-        System.out.println();
+        System.out.println("Task3");
         List<Employee> employees = new ArrayList<>();
         employees.add(new Manager("Ana", 35, "IT"));
         employees.add(new Programmer("Sergiu", 28, "C++"));
